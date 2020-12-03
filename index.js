@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
    let squares = [...document.getElementsByClassName("container")[0].children]
    let firstSquare = squares[0]
    firstSquare.addEventListener("click",() => {
-      console.log("hi")
+      squares.forEach(sq => {
+         sq.style.backgroundColor = "yellow"
+      });
    })
 })
 
