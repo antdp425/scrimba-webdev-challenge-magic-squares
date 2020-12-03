@@ -9,8 +9,14 @@ event listeners, Array work
 */
 
 // Write your code here 👇
-    
-    
+
+document.addEventListener("DOMContentLoaded", () => {
+   let squares = [...document.getElementsByClassName("container")[0].children]
+   let firstSquare = squares[0]
+   firstSquare.addEventListener("click",() => {
+      console.log("hi")
+   })
+})
 
 
 /*
